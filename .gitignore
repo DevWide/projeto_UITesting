@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Playwright
+playwright-report/
+trace.zip
+*.trace
+*.zip
+.screenshots/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Configuração do Playwright (cache de navegadores)
+.playwright/
+
+# Ambiente
+.env

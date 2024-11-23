@@ -1,0 +1,22 @@
+{
+    "login": {
+        "usernameInput": "#user-name",
+        "passwordInput": "#password",
+        "loginButton": "#login-button",
+        "errorMessage": ".error-message-container"
+    },
+    "inventory": {
+        "productSortDropdown": ".product_sort_container",
+        "addToCartButton": ".inventory_item:first-of-type .btn_inventory",
+        "shoppingCartLink": ".shopping_cart_link"
+    },
+    "cart": {
+        "checkoutButton": "#checkout",
+        "firstNameInput": "#first-name",
+        "lastNameInput": "#last-name",
+        "postalCodeInput": "#postal-code",
+        "continueButton": "#continue",
+        "finishButton": "#finish",
+        "successMessage": ".complete-header"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "UITesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm exec playwright test",
+    "test:headed": "pnpm exec playwright test --headed",
+    "test:report": "pnpm exec playwright show-report",
+    "test:all": "pnpm exec playwright test --project=all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "playwright": "^1.49.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.2.0"
+  }
+}
