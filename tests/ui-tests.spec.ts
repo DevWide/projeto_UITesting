@@ -10,7 +10,7 @@ let browser: Browser;
 let context: BrowserContext;
 
 test.beforeAll(async () => {
-  browser = await chromium.launch({ headless: false, slowMo: 500 });
+  browser = await chromium.launch({ headless: true, slowMo: 500 });
   test.setTimeout(60000);
 });
 
