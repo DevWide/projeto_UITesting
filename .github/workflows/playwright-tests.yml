@@ -20,15 +20,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 16
-        cache: 'pnpm'
 
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v2 
-      with:
-        version: 8 
+    - name: Enable corepack and setup pnpm
+      run: |
+        corepack enable
+        corepack prepare pnpm@8.6.0 --activate
 
     - name: Verify pnpm Installation
-      run: pnpm --version 
+      run: pnpm --version
 
     - name: Install dependencies
       run: pnpm install
@@ -49,14 +48,6 @@ jobs:
       uses: actions/upload-pages-artifact@v1
       with:
         path: playwright-report/
-
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v1
-
 
 
 
